@@ -1,0 +1,40 @@
+L’IGNORANTE — PWA INSTALLABILE
+
+CONTENUTO DEL PACCHETTO
+- index.html                  il gioco completo
+- manifest.webmanifest        nome, icona e comportamento dell’app
+- service-worker.js           funzionamento offline
+- assets/                     icone per iOS e Android
+
+IMPORTANTE
+Una PWA deve essere pubblicata tramite HTTPS perché il service worker funzioni.
+Non basta aprire index.html direttamente dall’app File.
+
+PUBBLICAZIONE
+1. Pubblica TUTTA la cartella L_IGNORANTE_PWA su un hosting HTTPS.
+2. Apri l’indirizzo di index.html dal telefono.
+3. Dopo la prima apertura, il gioco viene memorizzato per l’uso offline.
+
+INSTALLAZIONE SU iPHONE / iPAD
+1. Apri il link con Safari.
+2. Tocca Condividi.
+3. Tocca “Aggiungi alla schermata Home”.
+4. Conferma con “Aggiungi”.
+5. Avvia L’IGNORANTE dalla nuova icona.
+
+INSTALLAZIONE SU ANDROID
+1. Apri il link con Chrome.
+2. Apri il menu del browser.
+3. Tocca “Installa app” oppure “Aggiungi a schermata Home”.
+4. Conferma.
+5. Avvia L’IGNORANTE dalla nuova icona.
+
+AGGIORNAMENTI FUTURI
+Per aggiornare il gioco, sostituisci i file sullo stesso spazio web.
+Se modifichi anche il service worker, cambia CACHE_NAME (es. ignorante-pwa-v2)
+per forzare il rinnovo della cache.
+
+NOTE
+- Le coppie personalizzate e le preferenze restano nel browser del dispositivo.
+- Usa Esporta lista / Importa lista per spostare le carte personalizzate tra dispositivi.
+- Dopo la prima apertura riuscita online, il gioco può partire anche senza Internet.
